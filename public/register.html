@@ -1,54 +1,80 @@
+
 <!DOCTYPE html>
 <html class="scroll-smooth">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Social War</title>
+    <title>Social War</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com"> 
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> 
-	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400;1,500&family=Prompt:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400;1,500&family=Prompt:ital,wght@1,400;1,600&display=swap"
+        rel="stylesheet">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/index.34df27b5.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.34df27b5.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
 </head>
 <style>
-   .grid input {
+    .grid input {
         border-radius: 1rem !important;
         border: none;
     }
+
     button {
         border-radius: 0.5rem !important;
         border: none;
     }
-</style>
-<body class="bg-black bg-section bg-fixed bg-cover max-w-[100vw] overflow-x-hidden ">
-	
-    <header class="text-white fixed top-0 m-auto left-0 right-0 bg-gradient-to-b from-black to-black/5 z-10">
-		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-		<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center gap-2 justify-center">
-			<a href="/index.html#HOME" class="mr-5 hover:text-yellow">HOME</a>
-			<a href="/index.html#SPEAKERS" class="mr-5 hover:text-yellow">SPEAKERS</a>
-			<a href="/index.html#COMMITEE" class="mr-5 hover:text-yellow">COMMITTEE</a>
-			<a href="/index.html#PROGRAM" class="mr-5 hover:text-yellow">PROGRAM</a>
-			<a href="/index.html#REGISTER" class="mr-5 hover:text-yellow">REGISTER</a>
-			<a href="/index.html#CONTACT" class="mr-5 hover:text-yellow">CONTACT</a>
-		</nav>
-		</div>
-	</header>
 
-	<section id="HOME" class="text-white min-h-screen flex flex-col items-center bg-hero bg-cover bg-center">
-		<img class="h-16 mt-24" src="/sponsor.0f7f1056.png">
-		<img class="w-[70ch]" src="/logo.726d37a8.png">
-		<div class="text-4xl font-cod text-center capitalize mt-auto">12 november 2023</div>
-		<div class="text-3xl font-cod text-center capitalize mt-2 mb-16">Bitec Bangna
-	</div></section>
+    .ticket-price {
+        border-radius: 10%;
+    }
+
+    #discount-box {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #discount-box input {
+        width: 50%;
+    }
+
+    #discount_alert {
+        color: red;
+    }
+</style>
+
+<body class="bg-black bg-section bg-fixed bg-cover max-w-[100vw] overflow-x-hidden ">
+
+    <header class="text-white fixed top-0 m-auto left-0 right-0 bg-gradient-to-b from-black to-black/5 z-10">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center gap-2 justify-center">
+                <a href="./index.html#HOME" class="mr-5 hover:text-yellow">HOME</a>
+                <a href="./index.html#SPEAKERS" class="mr-5 hover:text-yellow">SPEAKERS</a>
+                <a href="./index.html#COMMITEE" class="mr-5 hover:text-yellow">COMMITTEE</a>
+                <a href="./index.html#PROGRAM" class="mr-5 hover:text-yellow">PROGRAM</a>
+                <a href="./index.html#REGISTER" class="mr-5 hover:text-yellow">REGISTER</a>
+                <a href="./index.html#CONTACT" class="mr-5 hover:text-yellow">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="HOME" class="text-white min-h-screen flex flex-col items-center bg-hero bg-cover bg-center">
+        <img class="h-16 mt-24" src="./sponsor.0f7f1056.png">
+        <img class="w-[70ch]" src="./logo.726d37a8.png">
+        <div class="text-4xl font-cod text-center capitalize mt-auto">12 november 2023</div>
+        <div class="text-3xl font-cod text-center capitalize mt-2 mb-16">Bitec Bangna
+        </div>
+    </section>
 
     <section class="py-8 bg-black/60 bg-gradient-to-b from-black to-black/0">
         <div class="flex place-content-center gap-2">
@@ -78,7 +104,8 @@
     <section class="py-8 bg-black/60">
         <p class="text-center text-yellow text-2xl my-4">ขั้นตอนการซื้อบัตร</p>
         <div class="grid grid-cols-4 relative my-4 max-w-xl m-auto">
-            <div class="block absolute bg-yellow h-[2px] w-3/4 bottom-[calc(1.5rem/2)] left-0 right-0 m-auto -z-10"> </div>
+            <div class="block absolute bg-yellow h-[2px] w-3/4 bottom-[calc(1.5rem/2)] left-0 right-0 m-auto -z-10">
+            </div>
             <div class="text-center">
                 <div class="text-white">เลือกบัตรที่นั่ง</div>
                 <span class="block m-auto aspect-square bg-yellow text-black h-6 w-6 text-center rounded-full">1</span>
@@ -98,208 +125,328 @@
         </div>
     </section>
 
-
     <section class="py-8 bg-black/60">
         <div class="container max-w-2xl m-auto">
 
             <div class="text-yellow max-w-5xl m-auto" id="COMMITEE">
-            <div class="text-black text-center mb-10">
-                <span class="bg-yellow p-1 rounded-t-lg m-auto">REGISTER</span>
-                <span class="bg-yellow block h-1"></span>
-            </div>
+                <div class="text-black text-center mb-10">
+                    <span class="bg-yellow p-1 rounded-t-lg m-auto">REGISTER</span>
+                    <span class="bg-yellow block h-1"></span>
+                </div>
 
             </div>
             <div class="max-w-lg m-auto">
                 <div class="flex">
 
-                    <img src="/seat_chart.a813ac73.jpg">
+                    <img src="./seat_chart.a813ac73.jpg">
                 </div>
 
                 <div class="p-2">
-                    <img src="/seat_plan.c7676a6b.jpg">
+                    <img src="./seat_plan.c7676a6b.jpg">
                 </div>
-            <form class="form_overlay" method="POST" accept-charset="UTF-8" autocomplete="off" name="socialwar" id="social_form">
-                <div class="bg-yellow rounded-r-md flex items-center p-2 my-4 relative">
-                    <img src="/saber_vvip.44fffa5f.png" class="h-full absolute left-0 -translate-x-1/2">
-                    <img alt="uvvip" src="/seat_uvvip.da01840d.png" class="w-16">
-                    <div class="pl-2">
-                        <p>ULTRA VVIP TICKET</p>
-                        <span class="text-white drop-shadow-text" id="ultra_vvip_price">9,900 THB</span>
-                    </div>
-                    <input class="ml-auto w-10 ticket-price" id="ULTRA_VVIP_TICKET" id="ultra_vvip_quantity" data-id="1" data-price="9900" value="0">
-                </div>
-                <div class="bg-yellow rounded-r-md flex items-center p-2 my-4 relative">
-                    <img src="/saber_uvvip.ca303978.png" class="h-full absolute left-0 -translate-x-1/2">
-                    <img alt="uvvip" src="/seat_vvip.bb0939ac.png" class="w-16">
-                    <div class="pl-2">
-                        <p>VVIP TICKET</p>
-                        <span class="text-white drop-shadow-text" id="vvip_price">4,900 THB</span>
-                    </div>
-                    <input class="ml-auto w-10 ticket-price" id="VVIP_TICKET" id="vvip_quantity" data-id="2" data-price="4900" value="0">
-                </div>
-                <div class="bg-yellow rounded-r-md flex items-center p-2 my-4 relative">
-                    <img src="/saber_platinum.5b282ccb.png" class="h-full absolute left-0 -translate-x-1/2">
-                    <img alt="uvvip" src="/seat_platinum.ab238155.png" class="w-16">
-                    <div class="pl-2">
-                        <p>PLATINUM TICKET
-                        </p>
-                        <span class="text-white drop-shadow-text" id="platinum_price">3,900 THB</span>
-                    </div>
-                    <input class="ml-auto w-10 ticket-price" id="PLATINUM_TICKET" id="platinum_quantity" data-id="3" data-price="3900" value="0">
-                </div>
-                <div class="bg-yellow rounded-r-md flex items-center p-2 my-4 relative">
-                    <img src="/saber_regular.1a98a0c7.png" class="h-full absolute left-0 -translate-x-1/2">
-                    <img alt="uvvip" src="/seat_regular.c93816b8.png" class="w-16">
-                    <div class="pl-2">
-                        <p>REGULAR TICKET</p>
-                        <span class="text-white drop-shadow-text" id="regular_price">2,900 THB</span>
-                    </div>
-                    <input class="ml-auto w-10 ticket-price" id="REGULAR_TICKET" id="regular_quantity" data-id="4" data-price="2900" value="0">
-                </div>
-
-                <div class="bg-yellow rounded-md">
-                    <div class="text-center">
-                        <div class="text-2xl font-bold">TOTAL</div>
-                        <div class="total"><span id="total" id="total-price">0 THB</span></div>
-                        <div class="row mt-5">
-                            <h1>โอนเงินได้ที่ </h1>
-                            <p>ธนาคารกรุงเทพ ชื่อบัญชี บจ. อีทัช</p>
-                            <p>เลขที่บัญชี 030-0-31545-4</p>
-                            <p>สาขา มหาวิทยาลัยหอการค้าไทย</p>
+                <form class="form_overlay" method="POST" accept-charset="UTF-8" autocomplete="off" name="socialwar"
+                    id="social_form">
+                    <div class="bg-yellow rounded-r-md flex items-center p-2 my-4 relative">
+                        <img src="./saber_vvip.44fffa5f.png" class="h-full absolute left-0 -translate-x-1/2">
+                        <img alt="uvvip" src="./seat_uvvip.da01840d.png" class="w-16">
+                        <div class="pl-2">
+                            <p>ULTRA VVIP TICKET</p>
+                            <span class="text-white drop-shadow-text" id="ultra_vvip_price">9,900 THB</span>
                         </div>
-                        <div class="text-xs mt-5">*ALL PRICES EXCLUDE VAT</div>
-                        <div class="text-xs">*SOME FEES MAY BE APPLIED</div>
+                        <input class="ml-auto w-10 ticket-price text-center" id="ULTRA_VVIP_TICKET"
+                            id="ultra_vvip_quantity" data-id="1" data-price="9900" value="0">
+                    </div>
+                    <div class="bg-yellow rounded-r-md flex items-center p-2 my-4 relative">
+                        <img src="./saber_uvvip.ca303978.png" class="h-full absolute left-0 -translate-x-1/2">
+                        <img alt="uvvip" src="./seat_vvip.bb0939ac.png" class="w-16">
+                        <div class="pl-2">
+                            <p>VVIP TICKET</p>
+                            <span class="text-white drop-shadow-text" id="vvip_price">4,900 THB</span>
+                        </div>
+                        <input class="ml-auto w-10 ticket-price text-center" id="VVIP_TICKET" id="vvip_quantity"
+                            data-id="2" data-price="4900" value="0">
+                    </div>
+                    <div class="bg-yellow rounded-r-md flex items-center p-2 my-4 relative">
+                        <img src="./saber_platinum.5b282ccb.png" class="h-full absolute left-0 -translate-x-1/2">
+                        <img alt="uvvip" src="./seat_platinum.ab238155.png" class="w-16">
+                        <div class="pl-2">
+                            <p>PLATINUM TICKET
+                            </p>
+                            <span class="text-white drop-shadow-text" id="platinum_price">3,900 THB</span>
+                        </div>
+                        <input class="ml-auto w-10 ticket-price text-center" id="PLATINUM_TICKET" id="platinum_quantity"
+                            data-id="3" data-price="3900" value="0">
+                    </div>
+                    <div class="bg-yellow rounded-r-md flex items-center p-2 my-4 relative">
+                        <img src="./saber_regular.1a98a0c7.png" class="h-full absolute left-0 -translate-x-1/2">
+                        <img alt="uvvip" src="./seat_regular.c93816b8.png" class="w-16">
+                        <div class="pl-2">
+                            <p>REGULAR TICKET</p>
+                            <span class="text-white drop-shadow-text" id="regular_price">2,900 THB</span>
+                        </div>
+                        <input class="ml-auto w-10 ticket-price text-center" id="REGULAR_TICKET" id="regular_quantity"
+                            data-id="4" data-price="2900" value="0">
                     </div>
 
-                
-                    <!-- <div class="flex flex-col gap-2 ml-auto">
+                    <div class="bg-yellow rounded-md pt-5 pb-5">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold">TOTAL</div>
+                        </div>
+                        <div class="flex space-x-4 mx-auto justify-center">
+                            <div class="grid grid-flow-row-dense grid-cols-1 w-40">
+                                <div class=""><span id="">ราคา</span></div>
+                                <div class=""><span id="">ส่วนลด<span id="fix-discount"></span></span></div>
+                                <div class=""><span id="">ภาษีมูลค่าเพิ่ม (VAT 7%)</span></div>
+                                <div class=""><span id=""><b>ราคารวมสุทธิ</b></span></div>
+                            </div>
+                            <div class="grid grid-flow-row-dense grid-cols-1">
+                                <div class=""><span>:</span></div>
+                                <div class=""><span>:</span></div>
+                                <div class=""><span>:</span></div>
+                                <div class=""><span><b>:</b></span></div>
+                            </div>
+                            <div class="grid grid-flow-row-dense grid-cols-1">
+                                <div class="total text-right"><span id="total-price">0 THB</span></div>
+                                <div class="total text-right"><span id="total-discount">0 THB</span></div>
+                                <div class="total text-right"><span id="total-vat">0 THB</span></div>
+                                <div class="total text-right"><span id="total-sumprice"><b>0 THB</b></span></div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="grid grid-cols-2 gap-2 mt-5 text-center" id="discount-box">
+                                <input class="w-full form-control text-center mb-2" id="discount" type="text"
+                                    placeholder="กรอกส่วนลดที่นี่">
+                                <button class="py-2 px-4 bg-black text-yellow chk_discount" onclick="checkDiscount()"
+                                    type="button">ตรวจสอบ</button>
+                                <div class="text-center mb-5" id="discount-box">
+                                    <span id="discount_alert"></span>
+                                </div>
+                            </div>
+                            <hr class="h-px mx-8 bg-gray-200 border-1 dark:bg-gray-700">
+                            <div class="row mt-5">
+                                <h1>โอนเงินได้ที่</h1>
+                                <p>ธนาคารกรุงเทพ ชื่อบัญชี บจ. อีทัช</p>
+                                <p>เลขที่บัญชี 030-0-31545-4</p>
+                                <p>สาขา มหาวิทยาลัยหอการค้าไทย</p>
+                            </div>
+                            <!-- <div class="text-xs mt-5">*ALL PRICES EXCLUDE VAT</div>
+                            <div class="text-xs">*SOME FEES MAY BE APPLIED</div> -->
+                        </div>
+
+
+                        <!-- <div class="flex flex-col gap-2 ml-auto">
                         <button class="rounded-md py-2 px-4 border-black border-2 text-black">รับโค้ดส่วนลด</button>
                         <button class="rounded-md py-2 px-4 bg-black text-yellow">ชำระเงิน</button>
                     </div> -->
-                </div>
+                    </div>
 
-                <div class="bg-yellow rounded-md p-2 my-4">
-                ยืนยันการชำระเงิน และลงทะเบียนรับบัตร
-                    <div class="grid grid-cols-2 gap-2">
-                        <div class="py-2">
-                            <label class="form-label" for="first_name">ชื่อ</label>
-                            <input class="w-full form-control" id="first_name" type="text">
-                        </div>
-                      
-                        <div class="py-2">
-                            <label class="form-label" for="last_name">นามสกุล</label>
-                            <input class="w-full form-control" id="last_name" type="text" required>
-                        </div>
-                        <div class="py-2">
-                            <label class="form-label" for="phone">เบอร์โทรศัพท์</label>
-                            <input class="w-full form-control" id="phone" type="number" required>
-                        </div>
-                        <div class="py-2">
-                            <label class="form-label" for="mail">E-MAIL</label>
-                            <input class="w-full form-control" id="mail" type="email">
-                        </div>
-                        <div class="col-span-2">
-                            <label class="form-label" for="totalprice">ยอดเงิน</label>
-                            <input class="w-full form-control" type="text" id="totalprice" readonly placeholder="โปรดระบุ">
-                        </div>
-                        <div class="py-2">
-                            <label class="form-label" for="day">วันที่โอน</label>
-                            <input class="w-full form-control" id="day" type="date">
-                        </div>
-                        <div class="py-2">
-                            <label class="form-label" for="getTime">เวลาโอน</label>
-                            <input class="w-full form-control" id="getTime" type="time">
-                        </div>
-                        <div class="row">
-                            <label class="form-label font-medium font-extrabold" for="slip">เเนบสลิปโอนเงิน</label><br>
-                            <input class="form-control mt-5" type="file" id="fileImage" placeholder="โปรดแนบไฟล์สลิป">
-                            <div class="mt-2 p-5">
-                                <img src="" alt="" id="imageSlip" style="border-radius: 2rem;">
+                    <div class="bg-yellow rounded-md p-2 my-4">
+                        ยืนยันการชำระเงิน และลงทะเบียนรับบัตร
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="py-2">
+                                <label class="form-label" for="first_name">ชื่อ</label>
+                                <input class="w-full form-control" id="first_name" type="text">
                             </div>
+
+                            <div class="py-2">
+                                <label class="form-label" for="last_name">นามสกุล</label>
+                                <input class="w-full form-control" id="last_name" type="text" required>
+                            </div>
+                            <div class="py-2">
+                                <label class="form-label" for="phone">เบอร์โทรศัพท์</label>
+                                <input class="w-full form-control" id="phone" type="number" required>
+                            </div>
+                            <div class="py-2">
+                                <label class="form-label" for="mail">E-MAIL</label>
+                                <input class="w-full form-control" id="mail" type="email">
+                            </div>
+                            <div class="col-span-2">
+                                <label class="form-label" for="totalprice">ยอดเงิน</label>
+                                <input class="w-full form-control" type="text" id="totalprice" readonly
+                                    placeholder="โปรดระบุ">
+                            </div>
+                            <div class="py-2">
+                                <label class="form-label" for="day">วันที่โอน</label>
+                                <input class="w-full form-control" id="day" type="date">
+                            </div>
+                            <div class="py-2">
+                                <label class="form-label" for="getTime">เวลาโอน</label>
+                                <input class="w-full form-control" id="getTime" type="time">
+                            </div>
+                            <div class="row">
+                                <label class="form-label font-medium font-extrabold"
+                                    for="slip">เเนบสลิปโอนเงิน</label><br>
+                                <input class="form-control mt-5" type="file" id="fileImage"
+                                    placeholder="โปรดแนบไฟล์สลิป">
+                                <div class="mt-2 p-5">
+                                    <img src="" alt="" id="imageSlip" style="border-radius: 2rem;">
+                                </div>
+                            </div>
+                            <div class="col-span-2 text-center py-4">
+                                <button class="py-2 px-4 bg-black text-yellow btn-save" onclick="saveData()"
+                                    type="button">SUBMIT</button>
+                            </div>
+                            <p id="demo"></p>
                         </div>
-                        <div class="col-span-2 text-center py-4">
-                            <button class="py-2 px-4 bg-black text-yellow btn-save" onclick="saveData()" type="button">SUBMIT</button>
-                        </div>
-                        <p id="demo"></p>
                     </div>
                 </form>
-                
-                </div>
+
             </div>
+        </div>
         </div>
     </section>
 
-	
-	<footer class="text-center mt-4 relative" id="CONTACT">
-		<a href="/index.html"><img src="/logo.726d37a8.png" class="h-16 m-auto my-4"></a>
-		<p class="text-white my-4">
-			<span><img src="/icon_location.3015a7ef.png" class="h-4 inline px-1"></span> UNIVERSITY OF THE THAI CHAMBER OF COMMERCE<br>
-			126/1 VIBHAVADI RANGSIT ROAD, DIN DAENG, BANGKOK 10400, THAILAND<br>
-			<a href="tel:0634466099"><span><img src="/icon_phone.b38d0ca6.png" class="h-4 inline px-1"></span> 063-446-6099</a>
-		</p>
-		<div class="flex gap-10 justify-center m-auto">
-			<a href="https://web.facebook.com/profile.php?id=100063540344795"><img src="/icon_facebook.5dbe90fa.png" class="h-10"></a>
-			<a href="https://twitter.com/utccetouch"><img src="/icon_twitter.58d7e015.png" class="h-10"></a>
-			<a href="https://www.instagram.com/socialwarsutccetouch2023/"><img src="/icon_instragram.98f241c1.png" class="h-10"></a>
-			<a href="https://manager.line.biz/account/@008bvdtl"><img src="/icon_line.d0e2f14e.png" class="h-10"></a>
-		</div>
-		<a href="/index.html"><img src="/qr_line.d927f1bb.png" class="mt-4 sm:absolute m-auto w-32 right-6 top-6"></a>
-		<div class="bg-black text-white mt-4 p-2 text-sm">
-		UNIVERSITY OF THE THAI CHAMBER OF COMMERCE 2023. ALL RIGHTS RESERVED.
-		</div>
+    <footer class="text-center mt-4 relative" id="CONTACT">
+        <a href="./index.html"><img src="./logo.726d37a8.png" class="h-16 m-auto my-4"></a>
+        <p class="text-white my-4">
+            <span><img src="./icon_location.3015a7ef.png" class="h-4 inline px-1"></span> UNIVERSITY OF THE THAI CHAMBER
+            OF COMMERCE<br>
+            126/1 VIBHAVADI RANGSIT ROAD, DIN DAENG, BANGKOK 10400, THAILAND<br>
+            <a href="tel:0634466099"><span><img src="./icon_phone.b38d0ca6.png" class="h-4 inline px-1"></span>
+                063-446-6099</a>
+        </p>
+        <div class="flex gap-10 justify-center m-auto">
+            <a href="https://web.facebook.com/profile.php?id=100063540344795"><img src="./icon_facebook.5dbe90fa.png"
+                    class="h-10"></a>
+            <a href="https://twitter.com/utccetouch"><img src="./icon_twitter.58d7e015.png" class="h-10"></a>
+            <a href="https://www.instagram.com/socialwarsutccetouch2023/"><img src="./icon_instragram.98f241c1.png"
+                    class="h-10"></a>
+            <a href="https://manager.line.biz/account/@008bvdtl"><img src="./icon_line.d0e2f14e.png" class="h-10"></a>
+        </div>
+        <a href="./index.html"><img src="./qr_line.d927f1bb.png" class="mt-4 sm:absolute m-auto w-32 right-6 top-6"></a>
+        <div class="bg-black text-white mt-4 p-2 text-sm">
+            UNIVERSITY OF THE THAI CHAMBER OF COMMERCE 2023. ALL RIGHTS RESERVED.
+        </div>
 
-	</footer>
-<script src="/register.25de21bd.js"></script>
+    </footer>
+    <script src="./register.25de21bd.js"></script>
 
-<!-- count down timer -->
-<script>
-    (function () {
-        const second = 1000,
+    <!-- count down timer -->
+    <script>
+        (function () {
+            const second = 1000,
                 minute = second * 60,
                 hour = minute * 60,
                 day = hour * 24;
 
-        let today = new Date(),
-            dd = String(today.getDate()).padStart(2, "0"),
-            mm = String(today.getMonth() + 1).padStart(2, "0"),
-            yyyy = today.getFullYear(),
-            nextYear = yyyy + 1,
-            dayMonth = "11/12/",
-            birthday = dayMonth + yyyy;
-        
-        today = mm + "/" + dd + "/" + yyyy;
-        if (today > birthday) {
-            birthday = dayMonth + nextYear;
-        }
-        
-        const countDown = new Date(birthday).getTime(),
-            x = setInterval(function() {    
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "11/12/",
+                birthday = dayMonth + yyyy;
 
-                const now = new Date().getTime(),
-                    distance = countDown - now;
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
 
-                document.getElementById("days").innerText = Math.floor(distance / (day)),
-                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
 
-                if (distance < 0) {
-                document.getElementById("headline").innerText = "สิ้นสุด";
-                document.getElementById("countdown").style.display = "none";
-                document.getElementById("content").style.display = "block";
-                clearInterval(x);
-                }
-            }, 0)
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                    if (distance < 0) {
+                        document.getElementById("headline").innerText = "สิ้นสุด";
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("content").style.display = "block";
+                        clearInterval(x);
+                    }
+                }, 0)
         }());
-</script>
+    </script>
 
-<!-- send to google sheets  -->
-<script>
-    // const scriptURL = 'https://script.google.com/macros/s/AKfycbyJB3eYNld3I0BEcCge4TRC0DSABH9DZeGjN1QCxviCPuu_nJQrOrSggKPgs1enkfTW/exec'
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzH_UsDJTVpF_zpzSHwWOgJhoCpB4_6ImWZMwpXeE0bmQ3BsP2Ysu-LfT7_VrAjoVIUDA/exec'
-    const form = document.forms['socialwar']
-    
-    function saveData() {
+    <!-- send to google sheets  -->
+    <script>
+        $("#discount").on("focus", function () {
+            let totalprice = $("#totalprice").val().replace(',', '')
+            if (totalprice == '' || totalprice == '0') {
+                $("#discount").prop('readonly', true)
+                $("#discount_alert").text('กรุณาเลือกที่นั่งของท่านก่อนใช้ส่วนลด')
+            } else {
+                $("#discount").removeAttr('readonly')
+                $("#discount_alert").text('')
+            }
+        });
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwHfa34fNWFA1MNTiWxC4Ui23CC_-hoE3OsfOVHlIvE6C3Sz_x3nYsorc5MBO0Zd2PtIw/exec'
+        // const scriptURL = 'https://script.google.com/macros/s/AKfycbzH_UsDJTVpF_zpzSHwWOgJhoCpB4_6ImWZMwpXeE0bmQ3BsP2Ysu-LfT7_VrAjoVIUDA/exec'
+        const form = document.forms['socialwar']
+
+        function checkDiscount() {
+            Swal.fire({
+                title: 'กำลังตรวจสอบ โปรดรอสักครู่<br> Verifying please wait',
+                allowOutsideClick: false,
+                showCancelButton: false,
+                showConfirmButton: false,
+                onBeforeOpen: () => {
+                    Swal.showLoading();
+                }
+            });
+
+            var discount = $("#discount").val();
+            let discountMessage;
+            $.ajax({
+                url: scriptURL,
+                type: "GET",
+                // data: JSON.stringify(discountData),
+                success: function (response) {
+                    var matchedItem = response.find(item => discount == item.code);
+                    if (matchedItem) {
+                        discountMessage = "คุณได้ส่วนลด " +  matchedItem.discount.toLocaleString('th-TH')  + "  THB";
+
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'ตรวจสอบเรียบร้อยแล้ว',
+                            text: discountMessage,
+                            showConfirmButton: false,
+                            timer: 3000
+                        });
+                    } else {
+                        discountMessage = "ไม่พบรหัสหรือรหัสไม่ถูกต้อง";
+
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'ไม่พบรหัสหรือรหัสไม่ถูกต้อง',
+                            showConfirmButton: false,
+                            timer: 3000
+                        });
+                    }
+                    $("#discount_alert").text(discountMessage);
+
+                    let totalprice = $("#total-price").text().replace(',', '')
+                    let retotalprice = parseInt(totalprice) - parseInt(matchedItem.discount)
+                    let formattedTotalPrice = retotalprice.toLocaleString('th-TH');
+
+                    $('#total').text(`${formattedTotalPrice} THB (-${matchedItem.discount})`);
+                    $("#totalprice").val(formattedTotalPrice);
+                    $("#discount").prop('disabled', true)
+                    $(".chk_discount").prop('disabled', true)
+                    $(".ticket-price").prop('disabled', true)
+
+                    $('#fix-discount').text(` (- ${matchedItem.discount})`);
+                    $('#total-discount').text(`${formattedTotalPrice} THB`);
+                    let vat = (retotalprice * 7) / 100;
+                    $('#total-vat').text(`${vat.toLocaleString('th-TH')} THB`);
+                    let result = retotalprice + vat;
+                    $('#total-sumprice').text(`${result.toLocaleString('th-TH')} THB`);
+                    $('#totalprice').val(result.toLocaleString('th-TH'));
+                },
+                error: function (error) {
+                    +
+                        console.error("Error:", error);
+                },
+            });
+        }
+
+        function saveData() {
             var first_name = $('#first_name').val();
             var last_name = $('#last_name').val();
             var phone = $('#phone').val();
@@ -333,17 +480,19 @@
                         mail: mail,
                         file: fileImage,
                         total_amount: totalprice,
-                        day:day,
-                        getTime:getTime,
+                        day: day,
+                        getTime: getTime,
                         ULTRA_VVIP_TICKET: ULTRA_VVIP_TICKET,
                         VVIP_TICKET: VVIP_TICKET,
                         PLATINUM_TICKET: PLATINUM_TICKET,
                         REGULAR_TICKET: REGULAR_TICKET,
-                        image: JSON.stringify(obj), 
+                        image: JSON.stringify(obj),
                     };
 
                     Swal.fire({
                         title: 'กำลังอัพโหลดข้อมูล...<br> Please wait a moment',
+                        showCancelButton: false,
+                        showConfirmButton: false,
                         allowOutsideClick: false,
                         onBeforeOpen: () => {
                             Swal.showLoading();
@@ -354,24 +503,26 @@
                         method: "POST",
                         body: JSON.stringify(data)
                     })
-                    .then(response => response.json())
-                    .then(data => {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'อัพโหลดข้อมูลเรียบร้อยแล้ว',
-                            showConfirmButton: false,
-                            timer: 2000
+                        .then(response => response.json())
+                        .then(data => {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'อัพโหลดข้อมูลเรียบร้อยแล้ว<br>สอบถามเพิ่มเติม',
+                                showConfirmButton: false,
+                            });
+                            setTimeout(() => {
+                                window.location.reload();
+                            }, 5000);
+                        })
+                        
+                        .catch(error => {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'เกิดข้อผิดพลาด!',
+                                text: 'ไม่สามารถอัพโหลดข้อมูลได้',
+                            });
+                            console.error(error);
                         });
-                        console.log(data); 
-                    })
-                    .catch(error => {
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'เกิดข้อผิดพลาด!',
-                            text: 'ไม่สามารถอัพโหลดข้อมูลได้',
-                        });
-                        console.error(error);
-                    });
                 };
 
                 fr.readAsDataURL(imageFile);
@@ -383,12 +534,10 @@
                 });
             }
         }
-</script>
+    </script>
 
-
-
-<!-- send image -->
-<!-- <script>
+    <!-- send image -->
+    <!-- <script>
     function sendImage() {
         // let url = "https://script.google.com/macros/s/AKfycbx9qcnoWKjK9p-v2V-jJQ7QRAFODf5li3ulodSEUZcrHfPaS-A7_Er5ANhOnNrZDQQEmA/exec";
         let url = "https://script.google.com/macros/s/AKfycbzH_UsDJTVpF_zpzSHwWOgJhoCpB4_6ImWZMwpXeE0bmQ3BsP2Ysu-LfT7_VrAjoVIUDA/exec";
@@ -426,42 +575,53 @@
     }
 </script> -->
 
-<!-- By Ticket -->
-<script>
-    
-var sumdata = [];
+    <!-- By Ticket -->
+    <script>
 
-$('.ticket-price').on('input', function() {
-    var id = $(this).data('id');
-    var price = $(this).data('price');
-    var value = parseFloat($(this).val()) || 0;
+        var sumdata = [];
 
-    var existingDataIndex = -1;
-    for (var i = 0; i < sumdata.length; i++) {
-        if (sumdata[i].id === id) {
-            existingDataIndex = i;
-            break;
-        }
-    }
+        $('.ticket-price').on('input', function () {
+            var id = $(this).data('id');
+            var price = $(this).data('price');
+            var value = parseFloat($(this).val()) || 0;
 
-    if (existingDataIndex === -1) {
-        sumdata.push({ id: id, price: price, value: value });
-    } else {
-        sumdata[existingDataIndex].value = value;
-    }
+            var existingDataIndex = -1;
+            for (var i = 0; i < sumdata.length; i++) {
+                if (sumdata[i].id === id) {
+                    existingDataIndex = i;
+                    break;
+                }
+            }
 
-    var sumprice = 0;
-    for (var i = 0; i < sumdata.length; i++) {
-        sumprice += sumdata[i].price * sumdata[i].value;
-    }
+            if (existingDataIndex === -1) {
+                sumdata.push({ id: id, price: price, value: value });
+            } else {
+                sumdata[existingDataIndex].value = value;
+            }
 
-    var formattedNumber = sumprice.toLocaleString('th-TH'); 
-    $('#total').text(formattedNumber + ' THB');
-    $('#totalprice').val(formattedNumber);
-});
+            var sumprice = 0;
+            for (var i = 0; i < sumdata.length; i++) {
+                sumprice += sumdata[i].price * sumdata[i].value;
+            }
+
+            var price = sumprice;
+            var formattedPrice = sumprice.toLocaleString('th-TH');
+            $('#total-price').text(formattedPrice + ' THB');
+
+            var vat = (sumprice * 7) / 100;
+            var formattedVat = vat.toLocaleString('th-TH');
+            $('#total-vat').text(`${formattedVat} THB`);
+
+            var sumPrice = price + vat;
+            var formattedSumPrice = (sumprice * 1.07).toLocaleString('th-TH');
+            $('#total-sumprice').text(`${formattedSumPrice} THB`);
+
+            $('#totalprice').val(formattedSumPrice);
+        });
 
 
-</script>
+    </script>
+
 </body>
 
 </html>
