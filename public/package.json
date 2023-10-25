@@ -1,0 +1,14 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "start": "yarn run start"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "parcel": "^2.0.0-nightly.1367",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  }
+}
